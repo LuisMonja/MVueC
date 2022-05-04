@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "ts-node ./.mvuec/main.ts",
+    "mig:run": "typeorm migration:run",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "bulma": "^0.9.3",
     "dotenv": "^16.0.0",
     "express": "^4.18.1",
@@ -17,6 +19,7 @@
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.31",
     "@vitejs/plugin-vue": "^2.3.1",

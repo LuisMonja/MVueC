@@ -5,6 +5,6 @@ var routers = readdirSync(process.cwd() + '/src/api')
 
 export default (app: Express) => {
 
-    routers.forEach(router => app.use(require(`${process.cwd()}/${router}`)))
+    routers.forEach(router => app.use(require(`${process.cwd()}/${router}`)()))
 
 }
